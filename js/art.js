@@ -1,0 +1,128 @@
+var artData1 = {
+	type:'合唱',
+	title:'公司精品市场部',
+	names:'朱晴、王晓贝、沈曼云、周茹、舒展、卞佟平、轩马飞',
+	opimg:'img/cc2.jpg',
+	imgs:[
+		'1a2.png','1a3.png','1a4.png','1a6.png','1a5.png','1a1.png','1a7.png'
+	],
+	show:'http://www.baidu.com',
+	page:false,
+	bgimg:'',
+	bgmic:'',
+	bgvid:'img/video/art_unvers.mov'
+};
+var artData2 = {
+	type:'独唱',
+	title:'小调情歌',
+	names:'石育妹',
+	opimg:'img/art2opbg.jpg',
+	imgs:[
+		'2i1.png'
+	],
+	show:'http://www.baidu.com',
+	page:false,
+	bgimg:'',
+	bgmic:'',
+	bgvid:'img/video/art_moon.mov'
+};
+var artData3 = {
+	type:'对口相声',
+	title:'才高八斗',
+	opimg:'img/art3opbg.jpg',
+	names:'薛锐钢、卢家发',
+	imgs:[
+		'3i1.png','3i2.jpg'
+	],
+	show:'http://www.baidu.com',
+	page:false,
+	bgimg:'img/art3playbg.JPG',
+	bgmic:'',
+	bgvid:''
+};
+var artData4 = {
+	type:'歌曲',
+	title:'Home有限公司',
+	opimg:'img/art4opbg.jpg',
+	names:'赵丽丽、欧寅伟、陈韵华',
+	imgs:[
+		'4a1.png','4a2.png','陈.gif',
+	],
+	show:'http://www.baidu.com',
+	page:false,
+	bgimg:'',
+	bgmic:'',
+	bgvid:''
+};
+var artData5 = {
+	type:'舞蹈',
+	title:'你干嘛！',
+	opimg:'img/art5opbg.jpg',
+	names:'王雷、邵倩娟、陈开宇、赖志淳、朱赛赛、檀祝保',
+	imgs:[
+		'i1.jpg','i2.png','i5.png','i6.png','i10.png','i11.png'
+	],
+	show:'http://www.baidu.com',
+	page:false,
+	bgimg:'img/cc2.jpg',
+	bgmic:'',
+	bgvid:'img/video/art_dj.mov'
+};
+var artData6 = {
+	type:'吉他弹唱',
+	title:'笨小孩',
+	names:'胡新毛、莫亿',
+	opimg:'img/art6opbg.jpg',
+	imgs:[
+		'6a1.png','6a2.jpg'
+	],
+	show:'http://www.baidu.com',
+	page:false,
+	bgimg:'',
+	bgmic:'',
+	bgvid:'img/video/art_goldlight.mp4'
+};
+var artData7 = {
+	type:'歌曲',
+	title:'我的好兄弟',
+	opimg:'img/art7opbg.jpg',
+	names:'施伟、陈宏浩',
+	imgs:[
+		'7i1.png','7i2.jpg'
+	],
+	show:'http://www.baidu.com',
+	page:false,
+	bgimg:'',
+	bgmic:'',
+	bgvid:'img/video/art_autum.mov'
+};
+var artData8 = {
+	type:'小品',
+	title:'高铁占座',
+	opimg:'img/art8opbg.jpg',
+	names:'范霖、侯波、汪洁、许振伟、伍晓宇',
+	imgs:[
+		'8i1.png','8i2.png','8i3.png','8i4.png','8i5.png'
+	],
+	show:'http://www.baidu.com',
+	page:false,
+	bgimg:'img/未标题-165465.jpg',
+	bgmic:'',
+	bgvid:'',
+	demo:8
+};
+var artData9 = {
+	type:'尤克里里弹唱',
+	title:'更高！更快！更强！',
+	opimg:'img/art9opbg.jpg',
+	names:'陈韵华、彭清、王辉、牛小超、胡月、邹双娟',
+	imgs:[
+		'陈.gif','胡月.gif','牛.gif','彭.gif','王.gif','邹.gif'
+	],
+	show:'http://www.baidu.com',
+	page:false,
+	bgimg:'img/cc2.jpg',
+	bgmic:'',
+	bgvid:'',
+	demo:9
+};
