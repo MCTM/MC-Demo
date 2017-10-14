@@ -1,0 +1,929 @@
+html,body{
+	margin: 0 0;
+	padding: 0 0;
+	font-family: "微软雅黑";
+}
+
+#all{
+	position: relative;
+	background-color: #000000;
+	box-shadow: 0 0 10px #000000 inset;
+	cursor: url('../img/weathy_01.png'),default;
+	overflow: hidden;
+}
+.hide{
+	display: none;
+}
+
+
+/*页面部分*/
+#showall{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#showall>div{
+	position: absolute;
+	top: 0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+		/*主页*/
+#main{
+	background-image: url(../img/main.jpg);
+	background-size: 100% 100%;
+}
+		/*颁奖*/
+#bj{
+	background-image:url(../img/bjbg.png);
+	background-size: auto 100%;
+}
+.p_cover{
+	position:absolute;
+	top:5%;
+	left: 5%;
+	width: 90%;
+	height: 680px;
+	border-radius: 10px;
+	overflow: hidden;
+	z-index: 1;
+	transition: all 0.4s ease-in-out;
+	opacity: 0;
+}
+.p_cover.p_active{
+	z-index: 2;
+	opacity: 1;
+}
+.p_cover>div{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:790px;
+	transition: all 0.6s;
+}
+.p_cover>div.p_active{
+	top:-132px;
+}
+.p_title{
+	position: absolute;
+	top: 30px;
+	left: 5%;
+	width: 90%;
+	height: 100px;
+	max-height: 100px;
+	max-width: 90%;
+	border-radius: 6px;
+	background-color: rgba(25,25,25,0.7);
+	box-shadow: 0 0 2px #000000;
+	font-size: 65px;
+	line-height: 100px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.p_names{
+	position: absolute;
+	padding: 50px 5% 20px 5%;
+	top: 160px;
+	left: 5%;
+	width: 90%;
+	height: 420px;
+	max-height: 490px;
+	max-width: 80%;
+	border-radius: 6px;
+	background-color: rgba(25,25,25,0.7);
+	box-shadow: 0 0 2px #000000;
+	font-size: 34px;
+	text-align: left;
+	color: #FFFFFF;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.p_price{
+	position: absolute;
+	top: 682px;
+	left: 5%;
+	width: 90%;
+	height: 100px;
+	max-height: 100px;
+	max-width: 90%;
+	border-radius: 6px;
+	background-color: rgba(25,25,25,0.7);
+	box-shadow: 0 0 2px #000000;
+	font-size: 80px;
+	line-height: 100px;
+	text-align: center;
+	color: #FFFFFF;
+	word-break: normal;
+	white-space: normal;
+}
+	
+		/*节目部分*/
+#a_op{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/artopbg.jpg);
+	background-size:cover;
+	overflow: hidden;
+}
+#a_type{
+	position: absolute;
+	top:20%;
+	left: 20%;
+	white-space: nowrap;
+	word-break: keep-all;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 0 0 10px #000000;
+
+}
+#a_title{
+	position: absolute;
+	top:31%;
+	left: 8%;
+	white-space: nowrap;
+	word-break: keep-all;
+	color: #ffffff;
+	font-size: 120px;
+	font-weight: bold;
+	text-shadow: 0 0 20px #000000;
+}
+#a_names{
+	position: absolute;
+	display: block;
+	top:70%;
+	left: 12%;
+	white-space: nowrap;
+	word-break: keep-all;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: bold;
+	font-family: "楷体";
+	text-shadow: 0 0 10px #000000;
+	max-width: 800px;
+	
+}
+.a_showinop{
+	animation: aop 2s linear;
+}
+@keyframes aop {
+  0% {
+    opacity: 0;
+  }
+  50%{
+  	opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.a_showin_type{
+	animation: a_type 10s ;
+}
+@keyframes a_type {
+  0% {
+    left: -4%;
+  }
+  2%{
+  	left: 8%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+.a_showin_title{
+	animation: a_title 10s ;
+}
+@keyframes a_title {
+  0% {
+    left: 30%;
+  }
+  2%{
+  	left: 13%;
+  }
+  100% {
+    left: 8%;
+  }
+}
+.a_showin_names{
+	animation: a_names 10s ;
+}
+@keyframes a_names {
+  0% {
+    left: -5%;
+  }
+  2%{
+  	left: 4%;
+  }
+  100% {
+    left: 12%;
+  }
+}
+#a_pic{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	right: 5%;
+	
+}
+
+.a_headsGroup1{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: auto;
+	text-align: right;
+}
+.a_headType1{
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	max-width:14%;
+	transform: skew(-15deg,0deg);
+	overflow: hidden;
+}
+.a_headType1>img{
+	position:relative;
+	left:-90%;
+	transform: skew(15deg,0deg);
+	height:100%;
+	width:auto;
+	opacity: 1;
+}
+.a_headType1>div{
+	position:absolute;
+	top: 0px;
+	left:0px;
+	height: 100%;
+	width: 100%;
+	z-index:1;
+	box-shadow: 0 0 20px #000000 inset;
+	
+}
+.a_headsGroup2{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: auto;
+	text-align: right;
+}
+.a_headsGroup2 .a_hg_up,.a_headsGroup2 .a_hg_down{
+	position:absolute;
+	width: auto;
+	height: 50.1%;
+	right: 0px;
+	text-align: right;
+	white-space: nowrap;
+	word-break: keep-all;
+}
+.a_headsGroup2 .a_hg_up{
+	top:0px;
+}
+.a_headsGroup2 .a_hg_down{
+	bottom:0px;
+}
+.a_headType2{
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	max-width:10%;
+	transform: skew(-10deg,0deg);
+	overflow: hidden;
+	/*border: 3px solid rgba(12,13,25,0.8);*/
+	box-shadow: 0 0 25px #000000;
+	
+}
+.a_headType2>img{
+	position:relative;
+	left:-40%;
+	transform: skew(10deg,0deg);
+	height:100%;
+	width:auto;
+	opacity: 1;
+}
+.a_headType2>div{
+	position:absolute;
+	top: 0px;
+	left:0px;
+	height: 100%;
+	width: 100%;
+	z-index:1;
+	box-shadow: 0 0px 30px #000000 inset;
+	
+}
+.a_headsShowIn{
+	animation: a_headsShowInAN 1s;
+}
+@keyframes a_headsShowInAN {
+  0% {
+    right: 50%;
+  }
+  100% {
+    right: 5%;
+  }
+}
+#a_start{
+	position: absolute;
+	top:45%;
+	left: 47.5%;
+	height:100px;
+	width:100px;
+	opacity: 0.5;
+	transition: opacity 0.3s;
+}
+#a_start:hover{
+	opacity: 0.8;
+}
+#a_start>img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	top:-50%;
+	left:-50%;
+}
+.a_hs_startin{
+	animation: a_hs_startinAN 0.7s ease-out;
+}
+
+@keyframes a_hs_startinAN {
+  0% {
+    height:0px;
+    width:0px;
+    /*transform: rotate(-270deg);*/
+    /*top:48%;
+	left: 49.5%;*/
+	opacity: 0;
+  }
+  100% {
+   height:100px;
+    width:100px;
+    /*transform: rotate(0deg);*/
+    /*top:45%;
+	left: 47.5%;*/
+	opacity: 0.5;
+	
+  }
+}
+#a_bg{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/artopbg.jpg);
+	background-size: cover;
+	overflow: hidden;
+	opacity: 0;
+}
+.art_video{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: auto;
+	height: 100%;
+	overflow: hidden;
+	padding: 0 0 ;
+}
+.art_video>video{
+	position: relative;
+	display: block;
+	margin: 0 0;
+	top: 0px;
+	left: 0px;
+	width:auto;
+	height: 100%;
+}
+
+
+
+/*游戏部分*/
+#g_rules{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left:0px;
+	background-size:  100% 100%;
+}
+#g_play{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left:0px;
+	background-size: cover;
+}
+#g_ruletext{
+	position: absolute;
+	width: 90%;
+	height: 80%;
+	top:10%;
+	left: 5%;
+	border-radius: 10px;
+	box-shadow: 0 0 15px #000000;
+	background-color: rgba(40,40,40,0.8);
+	color: #ffffff;
+	padding: 20px;
+}
+#g_r_name{
+	font-size: 60px;
+	text-align: center;	
+	font-weight: bold;
+	
+}
+#g_ruletext>p{
+	font-size: 30px;
+	text-indent: 2em;
+}
+#g_start{
+	position: absolute;
+	top: 70px;
+	left: 70px;
+	height:100px;
+	width:100px;
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+#g_start:hover{
+	opacity: 0.8;
+	height:110px;
+	width:110px;
+}
+#g_start>img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	top:-50%;
+	left:-50%;
+}
+#g_game1{
+	position: absolute;
+	left: 0px;
+	top:35%;
+	height: 300px;
+	width: 100%;
+	text-align: center;
+}
+#g_game1>div{
+	position: relative;
+	display: inline-block;
+	margin: 0 50px 0 50px;
+	height: 120px;
+	width: 120px;
+	transition: all 0.3s;
+	opacity: 0.9;
+}
+#g_game1>div>img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	transition:  all 0.5s;
+}
+#g_game1>div>img:hover{
+	transform: rotate(15deg);
+}
+#g_game1>div:hover{
+	opacity: 1;
+}
+#g_vidplay{
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	padding-top: 50px;
+	background-color: rgba(100,100,100,0.6);
+	z-index: 2;
+}
+.close{
+	position: absolute;
+	display: block;
+	width: 80px;
+	height: 80px;
+	font-size: 60px;
+	line-height: 65px;
+	text-align: center;
+	border: 4px solid #ffffff;
+	color: #ffffff;
+	border-radius: 50%;
+	opacity: 0.5;
+	transition: all 0.3s;
+	z-index: 1;
+}
+.close:hover{
+	opacity: 1;
+	box-shadow: 0 0 5px #000000;
+}
+.g_video{
+	position: relative;
+	display: block;
+	margin: auto auto;
+	width: 80%;
+	height: auto;
+	max-width: 80%;
+	max-height: 85%;
+}
+.g_g3_lthd{
+	position: absolute;
+	width:120px;
+	height: 120px;
+	transition: all 0.3s;
+}
+.g_g3_lthd>img{
+	width: 100%;
+	height: auto;
+}
+.g_g3_lthd:hover{
+	transform: rotate(20deg);
+}
+.g_g3_lthd>span{
+	color: #FF4500;
+	text-shadow:0 0 3px  #ffffff;
+	
+}
+
+/*猜词游戏*/
+#g_game2_cs{
+	position: absolute;
+	top: 19%;
+	left:6%;
+	width: auto;
+	height: auto;
+}
+.g_g2_cstable>tbody>tr>td{
+	padding: 20px;
+	position: relative;
+	transition: all 0.3s;
+}
+.g_g2_cstable>tbody>tr>td:hover{
+	transform: rotate(17deg);
+}
+.g_g2_cstable>tbody>tr>td>img{
+	height: 120px;
+	width: auto;
+}
+.g_g2_cstable>tbody>tr>td>span{
+	position: absolute;
+	z-index: 1;
+	font-size: 80px;
+	text-shadow: 0 0 12px #ff0000;
+	color: gold;
+	top: 15px;
+	left: 30px;
+	font-weight: bold;
+}
+
+#g_game2_js{
+	position: absolute;
+	top: 10%;
+	right:5%;
+	width: auto;
+	height: auto;
+}
+.g_g2_jstable>tbody>tr>td{
+	padding: 20px;
+	position: relative;
+	transition: all 0.3s;
+}
+.g_g2_jstable>tbody>tr>td:hover{
+	transform: rotate(17deg);
+}
+.g_g2_jstable>tbody>tr>td>img{
+	height: auto;
+	width: 180px;
+	transition: all 0.3s;
+}
+.g_g2_jstable>tbody>tr>td>img:hover{
+	transform: rotate(19deg);
+}
+.g_g2_jstable>tbody>tr>td>span{
+	position: absolute;
+	z-index: 1;
+	font-size: 95px;
+	text-shadow: 0 0 10px red;
+	color: gold;
+	top: 15px;
+	left: 15px;
+	font-weight: bold;
+}
+
+#g_g2_gobg{
+	position:fixed;
+	top: 0px;
+	left:0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(25,25,25,0.6);
+	z-index: 10;
+}
+#g_g2_time{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 15% auto;
+	border-radius: 50%;
+	border: 10px solid  ;
+	color: dodgerblue;
+	line-height:272px;
+	text-align: center;
+	font-size: 200px;
+	font-weight: bold;
+	z-index: 2;
+	transition: all 0.5s ease-in;
+}
+
+#g_g2_words{
+	position:absolute;
+	width: 80%;
+	height: 65%;
+	top:5%;
+	left: 10%;
+	background-color: #ffffff;
+	background-image: url(../img/game2wordsbg.jpg);
+	background-size: 100% 100%;
+	box-shadow: 0 0 19px #000000;
+	border-radius: 4px;
+	z-index: 1;
+	color: orangered;
+	text-align: center;
+	padding-top: 17%;
+	font-size: 180px;
+	white-space: nowrap;
+	word-break: keep-all;
+}
+#g_g3_play{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(40,40,40,0.8);
+}
+#g_g3_playinner{
+	position: relative;
+	height: 768px;
+	width: 1024px;
+	margin:auto auto;
+	
+}
+.g_g3_gwords{
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	perspective:400;
+	-webkit-perspective:400;
+}
+.g_g3_gwords>img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;	
+	z-index: 2;		
+	transition: all 0.6s;	
+	transform: rotateY(0deg);
+	border-radius: 10px;
+}
+.g_g3_gwords>div{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;	
+	z-index: 1;
+	transform: rotateY(180deg);	
+	transition: all 0.6s;	
+	background-color: aliceblue;
+	text-align: center;
+	font-size: 60px;
+	color: #000000;
+	line-height: 200px;	
+	font-weight: bold;
+	border-radius: 10px;
+}
+#g_g3_a_head{
+	position: absolute;
+	top:8%;
+	left: 10%;
+	width: 300px;
+	height: auto;
+}
+#g_g3_a_head>img{
+	width: 100%;
+	height: auto;
+}
+#g_g3_a_name{
+	position: absolute;
+	top:5%;
+	left: 52%;
+	font-size: 70px;
+	color: #ffffff;
+}
+#g_g3_a_part{
+	position: absolute;
+	top:26%;
+	left: 52%;
+	font-size: 40px;
+	color: #ffffff;
+}
+#g_g3_a_detail{
+	position: absolute;
+	top:40%;
+	left: 52%;
+	max-width: 35%;
+	word-break: normal;
+	white-space: normal;
+	font-size: 30px;
+	color: #ffffff;
+}
+#present{
+	background-image: url(../img/pbg.jpg);
+	background-size: 100% 100%;
+}
+#p_cover{
+	position: relative;
+	width: 900px;
+	height: 650px;
+	margin: 4% auto;
+	overflow: hidden;
+	border-radius: 12px;
+	box-shadow: 0 0 10px #000000;
+}
+#p_toleft{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100px;
+	z-index: 5;
+	background-color: rgba(0,0,0,0.6);
+	transition: all 0.3s;
+	opacity: 0;
+	border-top-right-radius:100%;
+	border-bottom-right-radius: 100%;
+}
+#p_toright{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 100px;
+	z-index: 5;
+	background-color: rgba(0,0,0,0.6);
+	transition: all 0.3s;
+	opacity: 0;
+	border-top-left-radius: 100%;
+	border-bottom-left-radius: 100%;
+}
+#p_toleft:hover,#p_toright:hover{
+	opacity: 1;
+	width: 150px;
+}
+#p_tomid{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(25,25,25,0.5);
+	z-index: 1;
+	overflow: hidden;
+}
+.p_minner{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+	transition: all 0.3s;
+}
+.p_minner>table{
+	margin: auto auto;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.p_minner>table>tbody>tr>td{
+	position: relative;
+}
+.p_minner>table>tbody>tr>td>img{
+	display: block;
+	margin: auto auto;
+	height: auto;
+	position: relative;
+	box-shadow: 5px 5px 4px #000000;
+	border-radius: 10px;
+}
+.p_toptd{
+	text-align: center;
+	font-size: 80px;
+	font-weight: bold;
+	text-shadow: 0 0 3px #000000;
+	color: #FFD700;
+	text-shadow: 0 0 5px #000000;
+	padding-bottom: 20px;
+}
+.p_bottomwords>td{
+	padding-top: 40px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+.p_table_split1>tbody>tr>td{
+	max-width: 800px;
+}
+.p_table_split2>tbody>tr>td{
+	max-width: 440px;
+}
+.p_table_split3>tbody>tr>td{
+	max-width: 290px;
+}
+.p_table_split1>tbody>tr>td>img{
+	max-width: 750px;
+	max-height: 300px;
+}
+.p_table_split2>tbody>tr>td>img{
+	max-width: 350px;
+}
+.p_table_split3>tbody>tr>td>img{
+	max-width: 280px;
+}
+/*底部按钮们*/
+#bottom{
+	position: absolute;
+	height: 80px;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	z-index: 100;
+}
+#links{
+	position: absolute;
+	height: 70px;
+	width: auto;
+	padding: 20px 50px 0 50px;
+	top: 0px;
+	left: 0px;
+	font-size: 14px;
+	color:#ffffff;
+	opacity: 0;
+	transition: opacity 0.45s;
+}
+#links:hover{
+	opacity: 1;
+}
+#links>span{
+	position: relative;
+	padding: 0 10px 0 10px;
+	transition: all 0.25s;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	-webkit-user-select: none;
+}
+#links>span:hover{
+	background-color: #ffffff;
+	color:lightslategrey;
+}
+#links>span:active{
+	box-shadow: 0 0 10px #ffffff;
+	text-shadow: 0 0 5px lightslategrey;
+}
+#links>div{
+	position: absolute;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	text-align: center;
+}
+#links>div>div{
+	position: relative;
+	white-space: nowrap;
+	word-break: keep-all;
+	padding: 10px 4px 10px 4px;
+	color:#ffffff ;
+	border-radius: 5px;
+}
+#links>div>div:hover{
+	color:lightslategrey ;
+	background-color: #ffffff;
+}
+#artlist{
+	top: -370px;
+	left:135px
+}
+#gamelist{
+	top: -180px;
+	left:195px
+}
